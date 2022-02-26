@@ -1,0 +1,523 @@
+/* ACLARACIONES: 
+  *La pagina  es responsive y responde bien hasta aprox 320px de largo
+
+*/
+/* Borro estilos previos */
+*{
+    margin: 0;
+    padding:0;
+
+}
+/*Letra que se va a utilizar*/
+html{
+    
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+/* HEADER */
+/*Defino lo estilos de mi header*/
+.logo{
+    
+    border-radius: 36px;
+    width: 150px;
+    height: 100px;
+    
+    
+}
+/* Defino que mi header quiero que sea una lista flex */
+.header{
+   
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+ 
+}
+
+.listaMenu{
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+    
+    
+}
+header{
+    background-color: black;
+    height: 110px;
+    
+}
+
+.listaMenu li{
+    padding: 10px;
+    transition: height 2s,width 2s;
+}
+.listaMenu a:hover{
+    height: 10px;
+    width: 100px;
+    background-color: white;
+    color: black;
+}
+/* </ HEADER> */
+
+/* BODY */
+/* defino estilos genericos para todos los archivos */
+body{
+    background-color: #f7cdb5e0;
+    width: 100%;
+    height: 100%;
+}
+/* Defino los tamaños que quiero que ocupe el main */
+main{
+
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-size: 60px;
+    margin-left: 30px;
+    padding-top: 10px;
+    text-align: center;
+    
+    
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+#footer{
+    background-color: black;
+    padding: 50px;
+    position: relative;
+}
+/* Declaro Flex para poder tener los elementos bien distribuidos en su contenedor */
+.footer__blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/* Declaro Flex */
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.footer__links img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+/* Mail y telefono */
+.footer__contacto{
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    align-items: right;
+}
+.footer__contacto__blocks{
+    margin-right: 50px;
+}
+.footer__contacto__blocks img{
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+/* </FOOTER> */
+
+/* INDEX */
+/* Fondo del index */
+.background{
+    
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to left, white, rgb(156, 156, 156));
+    
+}
+/* declaro mi grid del producto mas vendido al momento */
+.trending{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap:20px;
+    
+}
+/* este clase solo quiero que se vea cuando la pantalla se achica  */
+.iconTrend--mobile{
+    display: none;
+}
+/* Quiero que la imagen cubra un %  de su contendedor*/
+.trending img{
+    width: 90%;
+    height:75%;
+    border-radius: 20px;
+    
+}
+.trending span{
+    font-size: 80px ;
+    font-style: italic;
+    text-align: center;
+}
+/* Muestro los productos destacados en forma de grid */
+.productos{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap:20px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+/* Quiero que la imagen cubra un %  de su contendedor*/
+.productos img{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+
+}
+
+/* STORE */
+.storeBackground{
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0 auto;
+    padding-bottom: 30px;
+
+}
+/* Declaro 3 columnas */
+.storeGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.storeGrid h2 {
+    font-size: 30px;
+}
+.storeBackground img{
+    height:200px ;
+    width: 200px;
+}
+h3{
+    font-size: 40px;
+}
+
+/* SUCURSALES */
+.sucursalesBackground{
+    background-image: url("https://i.pinimg.com/originals/65/e3/36/65e336524b5a8982b811a8e07544e174.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0 auto;
+    padding-bottom: 30px;
+}
+.sucursalesGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.sucursalesGrid iframe{
+    height: 300px;
+    width: 80%;
+    padding-left: 30px;
+}
+.sucursalesGrid h2{
+    color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 40%;
+    font-size: 50px;
+}
+/* El titulo va a ocupar las 2 primeras posiciones del Grid */
+.tituloSelf{
+    grid-area: 1/1/2/3;
+}
+
+/* ABOUT US */
+/*  */
+/* Defino la posicion del video de presentacion */
+.video{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 50px;
+    padding-top: 30px;
+}
+/* Defino los estilos de texto de About us.  */
+.textoAbout{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: black;
+    width: 50vw;
+    height: 100vh;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: normal;
+    margin: 0 auto;
+    
+}
+
+.video iframe{
+    padding-top: 30px;
+    height: 50vh;
+    width: 40vw;
+}
+
+/* CONTACT */
+.contactGrid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+/* Le doy estilo al contenedor del form */
+.contact{
+    background-color: rgb(150, 250, 167);
+    height: 46%;
+    width: 40%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+#birth{
+    margin-top: 10px;
+}
+#surname{
+    margin-top: 10px;
+}
+#email{
+    margin-top: 10px;
+}
+#phone{
+    margin-top: 10px;
+}
+#ok{
+    margin-top: 10px;
+}
+#news{
+    margin-bottom: 10px;
+}
+
+form p{
+    margin-top: 10px;
+}
+.boton{
+    margin-top: 10px;
+    background-color: rgb(196, 194, 193);
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100px;
+}
+.contactBackground{
+    background-image: url("img/Wallpaperkiss_1058132.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+/* Media querys para tamaños de pantalla responsive */
+@media (max-width: 1420px){
+    /* INDEX */
+    /* Achico el grid para que se vea mejor */
+    .productos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+        justify-items: center;
+        
+        
+    }
+    .productos img{
+        width: 60%;
+        height: 100%;
+        
+        
+    }
+    .trending img{
+        width: 90%;
+        height:70%;
+        
+        
+    }
+    .trending span{
+        font-size: 60px;
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    /* A partir de ahora mostrar el contenido */
+    .iconTrend--mobile{
+        display: contents;
+    }
+    /* A partir de ahora ocultar el contenido */
+    .iconTrend{
+        display: none;
+    }
+}
+@media (max-width: 780px) {
+    /* CONTACT */
+    .contact{
+        height: 46%;
+        width: 43%;
+    }
+}
+@media (max-width: 720px) {
+    .menu{
+        display: none;
+    }
+    .video{
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 50px;
+        padding-top: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+    .textoAbout{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80vw;
+        height: 50vh;
+        font-size: 20px;
+        line-height: 35px;
+        margin: 0 auto;
+        overflow: scroll;
+        
+    }
+    
+    .video iframe{
+        padding-top: 30px;
+        height: 40vh;
+        width: 80vw;
+    }
+    .storeGrid img{
+        width: 100%;
+        height:100%;
+        padding-left: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+
+    .sucursalesGrid iframe{
+        height: 200px;
+    }
+    .sucursalesGrid h2{
+        width: 200px;
+        height: 40%;
+        font-size: 35px;
+    }
+    .contact{
+        height:60%;
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .productos{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        justify-items: center;
+        
+        
+    }
+    .productos img{
+        width: 60%;
+        height: 100%;
+        
+    
+    }
+    .trending{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap:20px;
+        justify-items: center;
+        
+    }
+    .trending img{
+        width: 70%;
+        height:40%;
+        
+        
+    }
+    .trending span{
+        font-size: 40px;
+        text-align: center;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+    .footer__logo{
+        display: none;
+    }
+    .textoAbout{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 70vw;
+        height: 40vh;
+        font-size: 15px;
+        line-height: 25px;
+        overflow: scroll;
+        
+    }
+    
+    .video iframe{
+        padding-top: 30px;
+        height: 40vh;
+        width: 60vw;
+    }
+    .storeGrid img{
+        width: 70%;
+        height:80%;
+    }
+    .storeGrid h2 {
+        font-size: 15px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    
+    .sucursalesGrid iframe{
+        height: 100%;
+    }
+    .sucursalesGrid h2{
+        width: 150px;
+        height: 40%;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .contact{
+        height:60%;
+        width: 60%;
+        font-size: 10px;
+    }
+}
