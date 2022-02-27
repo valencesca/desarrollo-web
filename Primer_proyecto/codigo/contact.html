@@ -42,39 +42,43 @@
             <section class="contactBackground">
                 <div class="contactGrid">
                     <form class="contact" action="">
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="name" id="name"><br>
+                        <div class="contact--grid">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name">
 
-                        <label for="surname">Apellido:</label>
-                        <input type="text" name="surname" id="surname"><br>
+                            <label for="surname">Apellido:</label>
+                            <input type="text" name="surname" id="surname">
 
-                        <label for="birth">Fecha de Nacimiento:</label>
-                        <input type="date" name="birth" id="birth"><br>
+                            <label for="birth">Fecha de Nacimiento:</label>
+                            <input type="date" name="birth" id="birth">
 
-                        <label for="email">Mail:</label>
-                        <input type="email" name="email" id="email"><br>
+                            <label for="email">Mail:</label>
+                            <input type="email" name="email" id="email">
 
-                        <label for="phone">Teléfono:</label>
-                        <input type="tel" name="phone" id="phone"><br>
-                        <p>Sexo:</p>
-                        <label for="F">F</label>
-                        <input type="radio" name="sex" id="F">
-                        <label for="M">M</label>
-                        <input type="radio" name="sex" id="M">
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="sex" id="otro"><br>
-                        
-                        <hr />
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" name="phone" id="phone">
+                            <p>Sexo:</p>
+                            <div class="options">
+                                <label for="F">F</label>
+                                <label for="M">M</label>
+                                <label for="otro">Otro</label>
+                                <input type="radio" name="sex" id="F">
+                                <input type="radio" name="sex" id="M">
+                                <input type="radio" name="sex" id="otro">
+                            </div>
+                            
+                            <div class="options--checkbox">
+                                <input type="checkbox" name="ok" id="ok">
+                                <label for="ok">Aceptar TyC</label>
+                                </div>  
+                                <div class="options--checkbox">
+                                <input type="checkbox" name="news" id="news">
+                                <label for="news">¿Desea recibir novedades?</label>
+                            </div>
+                            
 
-                        <input type="checkbox" name="ok" id="ok">
-                        <label for="ok">Aceptar TyC</label><br>
-                        <input type="checkbox" name="news" id="news">
-                        <label for="news">¿Desea recibir novedades?</label><br>
-
-                        <hr />
-
-                        <input class="boton"type="submit" value="Enviar">
-                        
+                            <input class="boton"type="submit" value="Enviar">
+                        </div>
                     </form>
                 </div>
             </section>
