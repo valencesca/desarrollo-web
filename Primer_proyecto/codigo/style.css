@@ -118,22 +118,6 @@ h1{
     max-width: 100%;
     height: auto;
 }
-.productos{
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    gap:20px;
-    overflow: auto;
-    padding-bottom: 20px;
-}
-/* Quiero que la imagen cubra un %  de su contendedor*/
-.productos img{
-    width: 40%;
-    height: 40%;
-    
-
-}
 
 /* STORE */
 .storeBackground{
@@ -247,7 +231,11 @@ h1{
     padding-top: 20px;
 }
 .contact{
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(189, 186, 186);
+    height: 100%;
+    width : 60%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 
@@ -281,10 +269,6 @@ h1{
         height: 40vh;
     }
     
-    
-    .contact{
-        width: 70vw;
-    }
 }
   
 @media (max-width: 576px) {
@@ -318,8 +302,5 @@ h1{
         height: 40%;
         font-size: 20px;
         margin-right: 10px;
-    }
-    .contact{
-        width: 80vw;
     }
 }
