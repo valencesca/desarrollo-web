@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav fs-5 ms-auto">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="store.html">Store</a>
                         <a class="nav-link" href="sucursales.html">Sucursales</a>
@@ -36,46 +36,104 @@
 
         <main>
             <section class="contactBackground">
-                <div class="contactGrid">
-                    <form class="contact" action="">
-                        <div class="contact--grid">
-                            <label for="name">Nombre:</label>
-                            <input type="text" name="name" id="name">
+                <div class="contact">
+                        <section class="container">
+                            <form class="row g-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    </div>
 
-                            <label for="surname">Apellido:</label>
-                            <input type="text" name="surname" id="surname">
+                                    <div class="col-md-6">
+                                        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                                    </div>
 
-                            <label for="birth">Fecha de Nacimiento:</label>
-                            <input type="date" name="birth" id="birth">
-
-                            <label for="email">Mail:</label>
-                            <input type="email" name="email" id="email">
-
-                            <label for="phone">Teléfono:</label>
-                            <input type="tel" name="phone" id="phone">
-                            <p>Sexo:</p>
-                            <div class="options">
-                                <label for="F">F</label>
-                                <label for="M">M</label>
-                                <label for="otro">Otro</label>
-                                <input type="radio" name="sex" id="F">
-                                <input type="radio" name="sex" id="M">
-                                <input type="radio" name="sex" id="otro">
-                            </div>
+                                    <div class="col-md-3">
+                                        <label for="startDate" class="form-label">Fecha de nacimiento</label>
+                                        <input id="startDate" class="form-control" type="date">
+                                    </div>
                             
-                            <div class="options--checkbox">
-                                <input type="checkbox" name="ok" id="ok">
-                                <label for="ok">Aceptar TyC</label>
-                                </div>  
-                                <div class="options--checkbox">
-                                <input type="checkbox" name="news" id="news">
-                                <label for="news">¿Desea recibir novedades?</label>
-                            </div>
-                            
+                                    <div class="col-md-6">
+                                        <h6 class="pt-2 fw-normal">Sexo:</h6>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">F</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">M</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">Otro</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
 
-                            <input class="boton"type="submit" value="Enviar">
-                        </div>
-                    </form>
+                                    <div class="col-md-3">
+                                        <label for="inputCity" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="inputState" class="form-label">Provincia</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Elija</option>
+                                            <option value="1">BUENOS AIRES</option>
+                                            <option value="2">CATAMARCA</option>
+                                            <option value="5">CHACO</option>
+                                            <option value="6">CHUBUT</option>
+                                            <option value="50">CIUDAD AUTONOMA DE Bs As</option>
+                                            <option value="3">CORDOBA</option>
+                                            <option value="4">CORRIENTES</option>
+                                            <option value="7">ENTRE RIOS</option>
+                                            <option value="8">FORMOSA</option>
+                                            <option value="9">JUJUY</option>
+                                            <option value="10">LA PAMPA</option>
+                                            <option value="11">LA RIOJA</option>
+                                            <option value="12">MENDOZA</option>
+                                            <option value="13">MISIONES</option>
+                                            <option value="14">NEUQUEN</option>
+                                            <option value="15">RIO NEGRO</option>
+                                            <option value="16">SALTA</option>
+                                            <option value="17">SAN LUIS</option>
+                                            <option value="19">SANTA CRUZ</option>
+                                            <option value="20">SANTA FE</option>
+                                            <option value="21">SANTIAGO DEL ESTERO</option>
+                                            <option value="22">TIERRA DEL FUEGO</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div class="col-12 pt-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Aceptar Términos y Condiciones
+                                        </label>   
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            ¿Desea recibir novedades?
+                                        </label>   
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </form>
+                        </section>
                 </div>
             </section>
         </main>
@@ -84,22 +142,32 @@
                 <div class="footer__logo">
                     <img class= "logo "src="img/logo.jfif" alt="logo" >
                 </div>
-                <div> 
+                <div>
+                    <h4 class="text-muted h4 mb-3">Contacto</h4>
                     <div class="footer__contacto">
                         <div class="footer__contacto__blocks">
-                            <img src="img/telefono.png" alt="telefono">+541111111111
+                            <img src="img/telefono.png" alt="telefono">
+                            <span class="">+541111111111</span>
                         </div>
                         <div class="footer__contacto__blocks">
-                            <img src="img/mail.png" alt="mail">mail@mail.com
+                            <img src="img/mail.png" alt="mail">
+                            <span>support@nidas.com</span>
                         </div>
                     </div>
-                    <div class="footer__links" >
-                        <a class="footer__links--facebook" href="https://es-la.facebook.com/" target="_blank"><img src="img/facebook logo 2.png" alt="facebook-logo"></a>
-                        <a class="footer__links--twitter" href="https://twitter.com/" target="_blank"><img src="img/twitter logo.jpg" alt="logo twitter"></a>
-                        <a class="footer__links--instagram" href="https://www.instagram.com/" target="_blank"><img src="img/instagram-logo.png" alt="logo instagram"></a>        
-                    </div>   
+                    <div class="d-flex flex-row align-items-end bd-highlight mt-3 footer__links justify-content-between">
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--facebook" href="https://es-la.facebook.com/" target="_blank"><img src="img/facebook logo 2.png" alt="facebook-logo"></a>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--twitter" href="https://twitter.com/" target="_blank"><img src="img/twitter logo.jpg" alt="logo twitter"></a>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--instagram" href="https://www.instagram.com/" target="_blank"><img src="img/instagram-logo.png" alt="logo instagram"></a>
+                        </div>
+                    </div>
                 </div> 
             </section>
         </footer>
+        
     </body>
 </html>
