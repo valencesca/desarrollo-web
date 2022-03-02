@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav fs-5 ms-auto">
                         <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="store.html">Store</a>
                         <a class="nav-link" href="sucursales.html">Sucursales</a>
@@ -35,18 +35,24 @@
 
         <main>
             <section class="background">
-                <h1>About Nidas</h1>
-                <article class="video">
-                    <iframe src="https://www.youtube.com/embed/SaMG5cM5ORk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h2 class="textoAbout">
-                        Somos una empresa 100% nacional, con más de 10 años de trayectoria en la comercialización de calzado.
-                        <p></p>
-                        
-                        Hoy, con 3 sucursales y a través del e-comerce llegamos a satisfacer las necesidades de nuestros clientes en todo el país.
-                        <p></p>
-                        Ofrecemos las mejores marcas, el más amplio stock y atención personalizada en nuestros locales.
-                    </h2>
-                </article>
+                <section class="container">
+                    <h1>About Nidas</h1>
+                    <div class="row justify-content-center">
+                        <iframe class="col-12 video" src="https://www.youtube.com/embed/SaMG5cM5ORk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2 class="display-3 text-center fst-italic m-5">Quienes somos</h2>
+                        <div class="col-12">
+                            <h3 class="display-4 fs-2 lh-sm px-5 pb-2">
+                                Somos una empresa 100% nacional, con más de 10 años de trayectoria en la comercialización de calzado.
+                            </h3>
+                            <h3 class="display-4 fs-2 px-5 lh-sm pb-2">
+                                Hoy, con 3 sucursales y a través del e-comerce llegamos a satisfacer las necesidades de nuestros clientes en todo el país.
+                            </h3>
+                            <h3 class="display-4 fs-2 px-5 lh-sm pb-5">
+                                Ofrecemos las mejores marcas, el más amplio stock y atención personalizada en nuestros locales.
+                            </h3>
+                        </div>
+                    </div>  
+                </section>
             </section>
         </main>
         <footer id="footer">
@@ -54,21 +60,29 @@
                 <div class="footer__logo">
                     <img class= "logo "src="img/logo.jfif" alt="logo" >
                 </div>
-                <div> 
+                <div>
+                    <h4 class="text-muted h4 mb-3">Contacto</h4>
                     <div class="footer__contacto">
                         <div class="footer__contacto__blocks">
-                            <img src="img/telefono.png" alt="telefono">+541111111111
+                            <img src="img/telefono.png" alt="telefono">
+                            <span class="">+541111111111</span>
                         </div>
                         <div class="footer__contacto__blocks">
-                            <img src="img/mail.png" alt="mail">mail@mail.com
+                            <img src="img/mail.png" alt="mail">
+                            <span>support@nidas.com</span>
                         </div>
                     </div>
-                    <div class="footer__links" >
-                        <a class="footer__links--facebook" href="https://es-la.facebook.com/" target="_blank"><img src="img/facebook logo 2.png" alt="facebook-logo"></a>
-                        <a class="footer__links--twitter" href="https://twitter.com/" target="_blank"><img src="img/twitter logo.jpg" alt="logo twitter"></a>
-                        <a class="footer__links--instagram" href="https://www.instagram.com/" target="_blank"><img src="img/instagram-logo.png" alt="logo instagram"></a>        
+                    <div class="d-flex flex-row align-items-end bd-highlight mt-3 footer__links justify-content-between">
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--facebook" href="https://es-la.facebook.com/" target="_blank"><img src="img/facebook logo 2.png" alt="facebook-logo"></a>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--twitter" href="https://twitter.com/" target="_blank"><img src="img/twitter logo.jpg" alt="logo twitter"></a>
+                        </div>
+                        <div class="p-2 bd-highlight">
+                            <a class="footer__links--instagram" href="https://www.instagram.com/" target="_blank"><img src="img/instagram-logo.png" alt="logo instagram"></a>
+                        </div>
                     </div>
-                    
                 </div> 
             </section>
         </footer>
