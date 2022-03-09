@@ -1,9 +1,9 @@
 /* SUCURSALES */
 .sucursalesBackground{
     background-image: url("https://i.pinimg.com/originals/65/e3/36/65e336524b5a8982b811a8e07544e174.jpg");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: $bgcenter; 
+    background-repeat: $bgnorepeat;
+    background-size: $bgsize;
     height: 0 auto;
     padding-bottom: 30px;
 }
@@ -38,7 +38,7 @@
     .sucursalesGrid{
 
         iframe{
-            height: 100%;
+            height: $full;
         }
         h2{
             width: 150px;

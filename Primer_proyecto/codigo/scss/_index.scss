@@ -2,12 +2,12 @@
 /* Fondo del index */
 .background{
     
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(to left, white, rgb(156, 156, 156));
-    height: 100%;
-    width: 100%;
+    background-image: $bggradient;
+    background-position: $bgcenter; 
+    background-repeat: $bgnorepeat;
+    background-size: $bgsize;
+    height: $full;
+    width: $full;
     
 }
 
@@ -15,7 +15,7 @@
 .row{
     img{
         border-radius:40px;
-        max-width: 100%;
+        max-width: $full;
         height: auto;
     }
 }

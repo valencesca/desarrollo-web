@@ -3,16 +3,16 @@
 /* Le doy estilo al contenedor del form */
 .contactBackground{
     background-image: url("../img/Wallpaperkiss_1058132.jpg");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+    background-position: $bgcenter; 
+    background-repeat: $bgnorepeat;
+    background-size: $bgsize;
+    height: $full;
     padding-bottom: 30px;
     padding-top: 20px;
 }
 .contact{
     background-color: rgb(189, 186, 186);
-    height: 100%;
+    height: $full;
     width : 60%;
     margin: 0 auto;
     border-radius: 10px;

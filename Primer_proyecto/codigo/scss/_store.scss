@@ -1,16 +1,16 @@
 /* STORE */
 .storeBackground{
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(to left, white, rgb(156, 156, 156));
-    height: 100%;
-    width: 100%;
+    background-image: $bggradient;
+    background-position: $bgcenter; 
+    background-repeat: $bgnorepeat;
+    background-size: $bgsize;
+    height: $full;
+    width: $full;
 }
 /*Cada producto de mi store*/
 .imageContainer{
-    background-position: center;
-    background-size: cover; 
+    background-position: $bgcenter;
+    background-size: $bgsize; 
     border-radius: 20px;
     height: 250px;
     width: 30%;
@@ -63,7 +63,7 @@
 @media (max-width: 768px) {
     .imageContainer{
         height: 400px;
-        width: 100%;
+        width: $full;
     }
 }
 @media (max-width: 576px) {
