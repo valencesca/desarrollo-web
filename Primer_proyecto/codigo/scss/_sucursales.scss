@@ -1,0 +1,50 @@
+/* SUCURSALES */
+.sucursalesBackground{
+    background-image: url("https://i.pinimg.com/originals/65/e3/36/65e336524b5a8982b811a8e07544e174.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0 auto;
+    padding-bottom: 30px;
+}
+.sucursalesGrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+
+    iframe{
+        height: 300px;
+        width: 80%;
+        padding-left: 30px;
+    }
+    h2{
+        color: rgb(0, 0, 0);
+        background-color: black;
+        color: white;
+        width: 300px;
+        height: 40%;
+        font-size: 50px;
+    }
+    /* El titulo va a ocupar las 2 primeras posiciones del Grid */
+    .tituloSelf{
+        grid-area: 1/1/2/3;
+    }
+}
+
+/* Media querys para tamaños de pantalla responsive */
+
+@media (max-width: 480px){
+    .sucursalesGrid{
+
+        iframe{
+            height: 100%;
+        }
+        h2{
+            width: 150px;
+            height: 40%;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }   
+}

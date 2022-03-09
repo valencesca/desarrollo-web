@@ -1,0 +1,74 @@
+/* STORE */
+.storeBackground{
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to left, white, rgb(156, 156, 156));
+    height: 100%;
+    width: 100%;
+}
+/*Cada producto de mi store*/
+.imageContainer{
+    background-position: center;
+    background-size: cover; 
+    border-radius: 20px;
+    height: 250px;
+    width: 30%;
+}
+.imageContainer--nikeblancas{ 
+    background-image: url(../img/nikeblancas.jpeg);
+    
+
+}
+.imageContainer--adidaspixar{
+    background-image: url(../img/adidas\ pixar\ 1.jpg);
+    
+}
+.imageContainer--newbalance{
+    background-image: url(../img/new\ balance.jpg);
+
+}
+.imageContainer--fila{
+    background-image: url(../img/fila\ blancas.jpg);
+    
+}
+.imageContainer--adidassuperstar{
+    background-image: url(../img/adidas\ superstar\ W.jpg);
+
+}
+.imageContainer--jordanblancas{
+    background-image: url(../img/Joradan\ blancas.png);
+
+}
+.imageContainer--nikenegras{
+    background-image: url(../img/nike\ negras\ M.jpg);
+    
+}
+.imageContainer--jordan{
+    background-image: url(../img/joradn.jpg);
+    
+}
+.imageContainer--yeezy{
+    background-image: url(../img/Yeezy.jpg);
+}
+
+/* Media querys para tamaños de pantalla responsive */
+@media (max-width: 992px) {
+    .imageContainer{
+        height: 250px;
+        width: 40%;
+    }
+} 
+
+@media (max-width: 768px) {
+    .imageContainer{
+        height: 400px;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .imageContainer{
+        height: 250px;
+        width: 80%;
+    }
+}

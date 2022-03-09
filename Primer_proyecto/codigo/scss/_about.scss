@@ -1,0 +1,23 @@
+/* ABOUT US */
+/*  */
+
+/* Defino los estilos de texto de About us.  */
+
+.video{
+    padding-top: 30px;
+    height: 80vh;
+    width: 100vw;
+}
+
+/* Media querys para tamaños de pantalla responsive */
+@media (max-width: 768px) {
+    .video{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .video{
+        height: 30vh;
+    }
+} 

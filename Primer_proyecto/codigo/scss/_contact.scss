@@ -1,0 +1,47 @@
+/* CONTACT */
+
+/* Le doy estilo al contenedor del form */
+.contactBackground{
+    background-image: url("../img/Wallpaperkiss_1058132.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.contact{
+    background-color: rgb(189, 186, 186);
+    height: 100%;
+    width : 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* Media querys para tamaños de pantalla responsive */
+
+@media (max-width: 768px) {
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            font-size: calc(1.625rem + 3.5vw);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            font-size: calc(1.625rem + 2.5vw);
+        }
+    }
+}
+@media (max-width: 480px){
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            font-size: 1.625rem;
+        }
+    }   
+}
