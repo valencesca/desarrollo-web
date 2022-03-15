@@ -7,25 +7,60 @@
 /* </ HEADER> */
 
 /* BODY */
-/* defino estilos genericos para todos los archivos */
-/* Uso esto para ver si algo se sale del contenedor y este mal */
-body{
-    background-color: #f7cdb5e0;
-    width: $full;
-    height: $full;
+.genericBackground{
+    background-position: $bgcenter; 
+    background-repeat: $bgnorepeat;
+    background-size: $bgsize;
 }
-/* Defino los tamaños que quiero que ocupe el main */
-main{
+@mixin sizes($width, $height) {
 
-    width: $full;
-    height: $full;
+    width: $width;
+    height: $height;
+}   
+@mixin images($bradius, $extra) {
+
+    border-radius: $bradius;
+
+    @if ($extra == 'filter') {
+
+        filter: grayscale($full);
+    }
+
+
+    @else if ($extra == 'spacing'){
+
+        @include margin(0,6px,0,5px);
+    }
+}
+
+@mixin fontSize ($size) {
+    font-size: $size;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+  //Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
 }
 /*defino tamaño de mi logo*/
 .logo{
+    @include sizes(150px,100px);
+    @include images(36px,'');
+}
+/* defino estilos genericos para todos los archivos */
+/* Uso esto para ver si algo se sale del contenedor y este mal */
+/* Defino los tamaños que quiero que ocupe el main */
 
-    border-radius: 36px;
-    width: 150px;
-    height: 100px;
+body, main{
+    @include sizes($full,$full);
 }
 
 .agrandarImg{
@@ -39,16 +74,17 @@ main{
 }
 
 h1{
-    font-size: 60px;
-    margin-left: 30px;
-    padding-top: 10px;
+    @include fontSize(60px);
+    @include padding(10px,0 ,0 ,0 );
+    @include margin(0, 0, 0, 30px);
     text-align: center;
 }
+
 
 /*FOOTER*/
 #footer{
     background-color: black;
-    padding: 50px;
+    @include padding(50px,50px ,50px,50px);
     
     /* Declaro Flex para poder tener los elementos bien distribuidos en su contenedor */
     .footer__blocks{
@@ -58,31 +94,25 @@ h1{
         
     }
 
-    /* Declaro Flex */
     .footer__links{
         img{
-            height: 30px;
-            width: 30px;
-            border-radius: 10px;
-            filter: grayscale($full);
+            @include sizes (30px,30px);
+            @include images(10px, filter);
         }
     }
     /* Mail y telefono */
     .footer__contacto{
         color: white;
         display: inline-block;
-        font-size: 20px;
+        @include fontSize(20px);
         align-items: right;
 
         span{
-            font-size: 18px;
+            @include fontSize(18px);
         }
         img{
-            height: 20px;
-            width: 20px;
-            margin-right: 6px;
-            margin-left: 5px;
-            border-radius: 10px;
+            @include sizes (20px,20px);
+            @include images(10px, spacing);
         }
     }
 }
@@ -93,8 +123,8 @@ h1{
 @media (max-width: 1420px){
     /* INDEX */
     h1{
-        font-size: 40px;
-        padding-bottom: 20px;
+        @include fontSize(40px);
+        @include padding(0,0,20px,0);
     }
 }
 
@@ -109,13 +139,13 @@ h1{
 
 @media (max-width: 480px){
     h1{
-        font-size: 25px;
+        @include fontSize(25px);
     }
     
     .footer__logo{
         display: none;
     }
     h3{
-        font-size: 20px;
+        @include fontSize(20px);
     }
 }
