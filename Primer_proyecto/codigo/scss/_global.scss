@@ -7,16 +7,19 @@
 /* </ HEADER> */
 
 /* BODY */
+/*Clase para extender en backgrounds*/
 .genericBackground{
     background-position: $bgcenter; 
     background-repeat: $bgnorepeat;
     background-size: $bgsize;
 }
+/*Defino tamaños*/
 @mixin sizes($width, $height) {
 
     width: $width;
     height: $height;
-}   
+} 
+/*Cambio border radius y ciertas cosas de ser necesarias*/  
 @mixin images($bradius, $extra) {
 
     border-radius: $bradius;
@@ -32,7 +35,7 @@
         @include margin(0,6px,0,5px);
     }
 }
-
+/*Cambio de font size*/
 @mixin fontSize ($size) {
     font-size: $size;
 }
@@ -43,18 +46,21 @@
     padding-bottom: $bottom;
     padding-left: $left;
 }
-  //Margin mixin
+
+/*Margin mixin*/
 @mixin margin($top, $right, $bottom, $left) {
     margin-top: $top;
     margin-right: $right;
     margin-bottom: $bottom;
     margin-left: $left;
 }
+
 /*defino tamaño de mi logo*/
 .logo{
     @include sizes(150px,100px);
     @include images(36px,'');
 }
+
 /* defino estilos genericos para todos los archivos */
 /* Uso esto para ver si algo se sale del contenedor y este mal */
 /* Defino los tamaños que quiero que ocupe el main */
