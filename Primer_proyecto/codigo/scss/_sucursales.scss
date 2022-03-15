@@ -1,11 +1,9 @@
 /* SUCURSALES */
 .sucursalesBackground{
+    @extend .genericBackground;
     background-image: url("https://i.pinimg.com/originals/65/e3/36/65e336524b5a8982b811a8e07544e174.jpg");
-    background-position: $bgcenter; 
-    background-repeat: $bgnorepeat;
-    background-size: $bgsize;
     height: 0 auto;
-    padding-bottom: 30px;
+    @include padding(0,0 ,30px ,0 );
 }
 .sucursalesGrid{
     display: grid;
@@ -14,17 +12,14 @@
     align-items: center;
 
     iframe{
-        height: 300px;
-        width: 80%;
-        padding-left: 30px;
+        @include sizes(80%,300px);
+        @include padding(0,0 ,0 ,30px);
     }
     h2{
-        color: rgb(0, 0, 0);
+        @include sizes(300px,40%);
         background-color: black;
         color: white;
-        width: 300px;
-        height: 40%;
-        font-size: 50px;
+        @include fontSize(50px);
     }
     /* El titulo va a ocupar las 2 primeras posiciones del Grid */
     .tituloSelf{
@@ -41,10 +36,9 @@
             height: $full;
         }
         h2{
-            width: 150px;
-            height: 40%;
-            font-size: 20px;
-            margin-right: 10px;
+            @include sizes(150px,40%);
+            @include fontSize(20px);
+            @include margin(0, 10px, 0, 0);
         }
     }   
 }

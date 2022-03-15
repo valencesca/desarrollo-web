@@ -2,19 +2,17 @@
 /* Fondo del index */
 .background{
     
+    @include sizes($full, $full);
+    @extend .genericBackground;
     background-image: $bggradient;
-    background-position: $bgcenter; 
-    background-repeat: $bgnorepeat;
-    background-size: $bgsize;
-    height: $full;
-    width: $full;
+
     
 }
 
 /* Muestro los productos destacados en forma de grid */
 .row{
     img{
-        border-radius:40px;
+        @include images (40px,'');
         max-width: $full;
         height: auto;
     }
