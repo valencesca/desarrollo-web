@@ -1,0 +1,20 @@
+/* INDEX */
+/* Fondo del index */
+.background{
+    
+    @include sizes($full, $full);
+    @extend .genericBackground;
+    background-image: $bggradient;
+
+    
+}
+
+/* Muestro los productos destacados en forma de grid */
+.row{
+    img{
+        @include images (40px,'');
+        max-width: $full;
+        height: auto;
+    }
+}
+    
