@@ -22,9 +22,8 @@ $shoes:(
     
     .imageContainer--#{$sh}{
         @include sizes (30%,250px);
-        background-position: $bgcenter;
-        background-size: $bgsize; 
-        border-radius: 20px;
+        @extend .genericBackground;
+        @include images(20px,'');
         background-image: $url;
     }
 }
