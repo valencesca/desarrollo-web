@@ -30,21 +30,31 @@ $shoes:(
 
 /* Media querys para tamaños de pantalla responsive */
 @media (max-width: 992px) {
-    .imageContainer{
-        @include sizes (40%,250px);
+    @each $sh, $url in $shoes {
+    
+        .imageContainer--#{$sh}{
+            @include sizes (40%,250px);
+
+        }
     }
+
 } 
 
 @media (max-width: 768px) {
-    .imageContainer{
+    @each $sh, $url in $shoes {
+    
+        .imageContainer--#{$sh}{
+            @include sizes ($full,400px);
 
-        @include sizes ($full,400px);
+        }
     }
 }
 @media (max-width: 576px) {
-    .imageContainer{
+    @each $sh, $url in $shoes {
+    
+        .imageContainer--#{$sh}{
+            @include sizes (80%,250px);
 
-        @include sizes (80%,250px);
-
+        }
     }
 }
