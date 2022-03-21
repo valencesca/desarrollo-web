@@ -3,15 +3,17 @@
 /* Le doy estilo al contenedor del form */
 .contactBackground{
     @extend .genericBackground;
-    background-image: url("../img/Wallpaperkiss_1058132.jpg");
+    background-image: $bggradient;
     height: $full;
     @include padding(20px,0 ,30px,0 );
 }
 .contact{
     @include sizes (60%,$full);
-    background-color: rgb(189, 186, 186);
-    margin: 0 auto;
-    border-radius: 10px;
+    background-color: rgba(54, 44, 44, 0.616);
+    margin: $auto;
+    @include images(10px, '');
+    box-shadow: 10px 15px rgba(128, 128, 128, 0.637);
+    color: black;
 }
 
 

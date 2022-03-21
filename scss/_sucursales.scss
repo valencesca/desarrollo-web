@@ -1,8 +1,8 @@
 /* SUCURSALES */
 .sucursalesBackground{
     @extend .genericBackground;
-    background-image: url("https://i.pinimg.com/originals/65/e3/36/65e336524b5a8982b811a8e07544e174.jpg");
-    height: 0 auto;
+    background-image: $bggradient;
+    height: $auto;
     @include padding(0,0 ,30px ,0 );
 }
 .sucursalesGrid{
