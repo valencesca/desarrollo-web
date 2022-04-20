@@ -1,0 +1,48 @@
+/* CONTACT */
+
+/* Le doy estilo al contenedor del form */
+.contactBackground{
+    @extend .genericBackground;
+    background-image: $bggradient;
+    height: $full;
+    @include padding(20px,0 ,30px,0 );
+}
+.contact{
+    @include sizes (60%,$full);
+    background-color: rgba(54, 44, 44, 0.616);
+    margin: $auto;
+    @include images(10px, '');
+    box-shadow: 10px 15px rgba(128, 128, 128, 0.637);
+    color: black;
+}
+
+.boton{
+    color: white;
+    border-color:black;
+}
+/* Media querys para tamaños de pantalla responsive */
+
+@media (max-width: 768px) {
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            @include fontSize(calc(1.625rem + 3.5vw));
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            @include fontSize(calc(1.625rem + 2.5vw));
+        }
+    }
+}
+@media (max-width: 480px){
+    .contact{
+        h3{
+            /*ME ROBO ESTA LOGICA DE BOOTSTRAP*/
+            @include fontSize(1.625rem);
+        }
+    }   
+}
